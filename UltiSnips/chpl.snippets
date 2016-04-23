@@ -4,7 +4,7 @@ priority -10
 
 snippet mod "module"
 module ${1} {
-	${0}
+	${0:${VISUAL}}
 }
 endsnippet
 
@@ -14,37 +14,37 @@ endsnippet
 
 snippet proc "proc"
 proc ${1}(${2}) {
-	${0}
+	${0:${VISUAL}}
 }
 endsnippet
 
 snippet forall "forall"
 forall ${1} in ${2} {
-	${0}
+	${0:${VISUAL}}
 }
 endsnippet
 
 snippet alldo "forall .. do"
 forall ${1} in ${2} do
-	${3}
+	${3:${VISUAL}}
 ${0}
 endsnippet
 
 snippet cof "coforall"
 coforall ${1} in ${2} {
-	${0}
+	${0:${VISUAL}}
 }
 endsnippet
 
 snippet cofdo "coforall .. do"
 coforall ${1} in ${2} do
-	${3}
+	${3:${VISUAL}}
 ${0}
 endsnippet
 
 snippet if "if"
 if ${1} {
-	${0}
+	${0${VISUAL}}
 }
 endsnippet
 
@@ -58,7 +58,7 @@ endsnippet
 
 snippet ift "if .. then"
 if ${1} then
-	${2}
+	${2:${VISUAL}}
 ${0}
 endsnippet
 
