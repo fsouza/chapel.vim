@@ -43,7 +43,7 @@ function ChapelIndent()
 				" search for the matching if ... then
 				let beforePreviousNum -= 1
 				let beforePrevious = getline(beforePreviousNum)
-				while beforePrevious !~ 'then\s*$'
+				while beforePrevious !~ '^\s*if .\+ then\s*$'
 					let beforePreviousNum -= 1
 					let beforePrevious = getline(beforePreviousNum)
 				endwhile
