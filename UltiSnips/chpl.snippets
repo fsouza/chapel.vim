@@ -70,9 +70,20 @@ if ${1} then
 	${0:${VISUAL}}
 endsnippet
 
-snippet ifte "if .. then"
+snippet ifte "if .. then .. else"
 if ${1} then
 	${2}
 else
 	${0}
+endsnippet
+
+snippet on "on"
+on ${1} {
+	${0:${VISUAL}}
+}
+endsnippet
+
+snippet ondo "on .. do"
+on ${1} do
+	${0:${VISUAL}}
 endsnippet
