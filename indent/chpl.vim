@@ -17,7 +17,7 @@ if exists("ChapelIndent")
 	finish
 endif
 
-function ChapelIndent()
+function! ChapelIndent()
 	let line = getline(v:lnum)
 	let previousNum = prevnonblank(v:lnum - 1)
 	let beforePreviousNum = previousNum - 1
