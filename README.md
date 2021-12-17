@@ -1,4 +1,7 @@
-#chapel.vim
+# chapel.vim
 
-Support for [Chapel](http://chapel.cray.com/) in Vim. Based in files
-distributed with the language.
+Support for [Chapel](https://chapel-lang.org/) in Vim.
+
+This is just a sync from the [files distributed with
+Chapel](https://github.com/chapel-lang/chapel/tree/main/highlight/vim) itself,
+make it installable with plugin managers.
